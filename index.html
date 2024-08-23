@@ -17,6 +17,7 @@
             font-family: "Manrope", sans-serif;
         }
         
+        
     </style>
 
 <script>
@@ -39,33 +40,17 @@
 
 <body class="font-manrope ">
     <header class="container mx-auto ">
-        <nav>
+        <nav class="">
 
             <div class="navbar bg-base-100 ">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
+                <div class="navbar-start lg:flex gap-2">
+                   
                     <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i>
-                    <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
+                    <a class=" text-4xl font-bold">Rinterio</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal px-1 text-xl font-[500] text-lightdark ">
-                        <li class=" hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Home</a></li>
+                        <li class="text-black hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Home</a></li>
                         <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
                         <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out" ><a>Portfolio</a></li>
                         <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
@@ -73,9 +58,31 @@
                     </ul>
                 </div>
                 <div class="navbar-end space-x-5">
-                    <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-3xl" style="color: #737373;"></i>
-                    <i class="fa-solid fa-cart-shopping  bg-white p-3 rounded-3xl" style="color: #737373;"></i>
-                    <a class="btn bg-arrow text-xl font-extrabold ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2" style="color: #ffffff;"></i></a>
+                    <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-3xl hidden lg:block" style="color: #737373;"></i>
+                    <i class="fa-solid fa-cart-shopping  bg-white p-3 rounded-3xl hidden lg:block" style="color: #737373;"></i>
+                    <!-- <a class="btn bg-arrow text-xl font-extrabold lg:block hidden ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2 " style="color: #ffffff;"></i></a> -->
+                    
+                    <a class="btn bg-arrow text-xl font-extrabold hidden lg:flex gap-2 items-center ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2" style="color: #ffffff;"></i></a>
+                
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5 ">
+                            <!-- <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li> -->
+                            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Home</a></li>
+                            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
+                            <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out" ><a>Portfolio</a></li>
+                            <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
+                            <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
