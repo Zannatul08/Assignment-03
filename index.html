@@ -31,7 +31,9 @@
             arrow: '#ABEF5F',
             title:'#212121',
             subtitle:'#494949',
-            button_bg: 'rgba(171, 239, 95, 0.5)'
+            button_bg: 'rgba(171, 239, 95, 0.5)',
+            second_bg:'rgb(235,234,234)',
+            card_sub: 'rgb(115, 115, 115)',
 
           }
         }
@@ -100,14 +102,57 @@
                 <p class="py-6 text-sm lg:text-xl font-medium text-subtitle w-full">
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
-                <button class="btn bg-button_bg text-xl font-extrabold  lg:flex gap-2 items-center mx-auto w-full ">View Details   <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i></button>
+                <button class="btn bg-button_bg w-full lg:w-auto text-xl font-extrabold  lg:flex gap-2 items-center mx-auto ">View Details   <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i></button>
               </div>
             </div>
           </div>
     </header>
 
     <main>
+        <section class="w-full bg-second_bg">
+        <div class=" container mx-auto  mt-24 lg:flex p-32 justify-center items-center  ">
+            <!-- <div></div> -->
+            
+            <div class="w-1/2">
+                <img class="relative -left-11 mb-3" src="./assets/Vector.png" alt="">
+            <button class=" lg:text-xl font-bold lg:rounded-xl bg-white px-5 py-0 mb-4 text-subtitle"><i class="fa-solid fa-arrow-right " style="color: lightdark;"></i> About Us</button>
+            <h1 class="font-bold lg:text-4xl text-title">We design thoughtful,<br> liveable spaces</h1>
+            <p class="py-6 text-sm lg:text-xl font-medium text-subtitle w-10/12">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
+                <div class="card card-side bg-white p-5 h-32 items-center mb-6 w-10/12">
+                    <figure class="">
+                      <img
+                        src="./assets/commercial.png"
+                        alt="" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title font-extrabold text-xl text-subtitle ">Commercial</h2>
+                      <p class="lg:font-medium text-lg text-card_sub">The barn house captivates with its blend <br>
+                        of rustic charm and modern.</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card card-side bg-white  p-5 h-32 items-center w-10/12 ">
+                    <figure class="">
+                      <img
+                        src="./assets/residential.png"
+                        alt="" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title font-extrabold text-xl text-subtitle ">Residential</h2>
+                      <p class="lg:font-medium text-lg text-card_sub">The barn house captivates with its blend <br>
+                        of rustic charm and modern.</p>
+                      
+                    </div>
+                  </div>
+            </div>
+
+            <div>
+                 <img src="./assets/Rectangle.png" alt="">
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer>
