@@ -2,25 +2,23 @@
 <html lang="en" data-theme="cupcake">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/761920a510.js" crossorigin="anonymous"></script>
-    
-    <style>
-        .font-manrope {
-            font-family: "Manrope", sans-serif;
-        }
-        
-        
-    </style>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/761920a510.js" crossorigin="anonymous"></script>
 
-<script>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -29,146 +27,148 @@
             dark: '#494949',
             lightdark: '#737373',
             arrow: '#ABEF5F',
-            title:'#212121',
-            subtitle:'#494949',
+            title: '#212121',
+            subtitle: '#494949',
             button_bg: 'rgba(171, 239, 95, 0.5)',
-            second_bg:'rgb(235,234,234)',
+            second_bg: 'rgb(235,234,234)',
             card_sub: 'rgb(115, 115, 115)',
             card1: 'rgb(231, 193, 211)',
             card2: 'rgb(239, 218, 110)',
             card3: 'rgb(164, 218, 195)',
             card4: 'rgb(119, 170, 234)',
-            fourthbtn:'rgba(171, 239, 95, 0.2)',
+            fourthbtn: 'rgba(171, 239, 95, 0.2)',
             cardborder: 'rgb(233, 233, 233)',
-            formbtn:'rgb(171, 239, 95)',
+            formbtn: 'rgb(171, 239, 95)',
 
           },
 
           backgroundImage: {
 
-      //   'custombg': "url('./assets/bg-2')",
-          'bg1': "url('./assets/bg.jpg')",
-       
-       }
+            //   'custombg': "url('./assets/bg-2')",
+            'bg1': "url('./assets/bg.jpg')",
+
+          }
         }
       }
     }
   </script>
-    <title>Assignment-03</title>
+  <title>Assignment-03</title>
 </head>
 
 <body class="font-manrope ">
-    <header class="container mx-auto ">
-        <nav class="">
+  <header class="container mx-auto ">
+    <nav class="">
 
-            <div class="navbar bg-base-100 ">
-                <div class="navbar-start lg:flex gap-2">
-                   
-                    <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i>
-                    <a class=" text-4xl font-bold">Rinterio</a>
-                </div>
-                <div class="navbar-center hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1 text-xl font-[500] text-lightdark ">
-                        <li class="text-black hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Home</a></li>
-                        <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
-                        <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out" ><a>Portfolio</a></li>
-                        <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
-                        <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end space-x-5">
-                    <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-3xl hidden lg:block" style="color: #737373;"></i>
-                    <i class="fa-solid fa-cart-shopping  bg-white p-3 rounded-3xl hidden lg:block" style="color: #737373;"></i>
-                    <!-- <a class="btn bg-arrow text-xl font-extrabold lg:block hidden ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2 " style="color: #ffffff;"></i></a> -->
-                    
-                    <a class="btn bg-arrow text-xl font-extrabold hidden lg:flex gap-2 items-center ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2" style="color: #ffffff;"></i></a>
-                
+      <div class="navbar bg-base-100 ">
+        <div class="navbar-start lg:flex gap-2">
 
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5 ">
-                            <!-- <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li> -->
-                            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Home</a></li>
-                            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
-                            <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out" ><a>Portfolio</a></li>
-                            <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
-                            <li  class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
+          <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i>
+          <a class=" text-4xl font-bold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex ">
+          <ul class="menu menu-horizontal px-1 text-xl font-[500] text-lightdark ">
+            <li class="text-black hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Home</a></li>
+            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
+            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Portfolio</a></li>
+            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
+            <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-5">
+          <i class="fa-solid fa-magnifying-glass bg-white p-3 rounded-3xl hidden lg:block" style="color: #737373;"></i>
+          <i class="fa-solid fa-cart-shopping  bg-white p-3 rounded-3xl hidden lg:block" style="color: #737373;"></i>
+          <!-- <a class="btn bg-arrow text-xl font-extrabold lg:block hidden ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2 " style="color: #ffffff;"></i></a> -->
+
+          <a class="btn bg-arrow text-xl font-extrabold hidden lg:flex gap-2 items-center ">Book Consult<i
+              class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2" style="color: #ffffff;"></i></a>
+
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
             </div>
-        </nav>
-
-        <div class="hero ">
-            <div class="hero-content text-center ">
-              <div class="items-center ">
-                <img class="mx-auto" src="./assets/banner.png" alt="">
-
-                <h1 class="text-3xl lg:text-7xl  font-extrabold text-center text-title ">A barn house of this design has a <br> striking appearance</h1>
-               
-                <p class="py-6 text-sm lg:text-xl font-medium text-subtitle w-full">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                </p>
-                <button class="btn bg-button_bg w-full lg:w-auto text-xl font-extrabold  lg:flex gap-2 items-center mx-auto ">View Details   <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i></button>
-              </div>
-            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5 ">
+              <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Home</a></li>
+              <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Services</a></li>
+              <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Portfolio</a></li>
+              <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Blogs</a></li>
+              <li class="hover:text-dark hover:font-bold duration-300 ease-in-out"><a>Contact Us</a></li>
+            </ul>
           </div>
-    </header>
+        </div>
+      </div>
+    </nav>
 
-    <main>
-        <!-- 2nd section -->
+    <div class="hero ">
+      <div class="hero-content text-center ">
+        <div class="items-center ">
+          <img class="mx-auto" src="./assets/banner.png" alt="">
+
+          <h1 class="text-3xl lg:text-7xl  font-extrabold text-center text-title ">A barn house of this design has a
+            <br> striking appearance</h1>
+
+          <p class="py-6 text-sm lg:text-xl font-medium text-subtitle w-full">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents, and large windows that flood the space with natural light.
+          </p>
+          <button
+            class="btn bg-button_bg w-full lg:w-auto text-xl font-extrabold  lg:flex gap-2 items-center mx-auto ">View
+            Details <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3"
+              style="color: #1c1c1c;"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2nd section -->
 
     <section class="w-full bg-second_bg">
       <div class="container mx-auto mt-24 lg:flex  items-center p-8 lg:p-32 text-center lg:text-left">
-            <!-- <div></div> -->
-            
-            <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
-              
-                <img class=" relative -left-11 mb-3 lg:block hidden " src="./assets/Vector.png" alt="">
-              
-            <!-- <button class=" lg:text-xl font-bold rounded-full bg-white px-6 py-2 mb-4 text-subtitle"><i class="fa-solid fa-arrow-right " style="color: lightdark;"></i> About Us</button> -->
+        <!-- <div></div> -->
 
-            <button class="btn btn-primary  lg:font-bold bg-white lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+        <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
 
-            <h3 class=" text-3xl font-bold lg:text-4xl text-title mb-2">We design thoughtful,<br> liveable spaces</h3>
-            
-           
-            <p class="py-6 text-sm lg:text-xl font-medium text-subtitle w-full lg:w-10/12">The barn house captivates with its blend of rustic charm and 
-                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <img class=" relative -left-11 mb-3 lg:block hidden " src="./assets/Vector.png" alt="">
 
-                
+          <!-- <button class=" lg:text-xl font-bold rounded-full bg-white px-6 py-2 mb-4 text-subtitle"><i class="fa-solid fa-arrow-right " style="color: lightdark;"></i> About Us</button> -->
 
-                  <div class="card card-side lg:items-center bg-white p-5 lg:h-32 lg:w-10/12 flex flex-row justify-start items-start text-start space-x-4 mb-6">
-                    <figure class="">
-                      <img class="w-full h-full object-contain" src="./assets/commercial.png" alt="Commercial Icon" />
-                    </figure>
-                    <div class="flex flex-col justify-center">
-                      <h2 class="card-title font-extrabold text-xl text-subtitle">Commercial</h2>
-                      <p class="lg:font-medium text-lg text-card_sub">The barn house captivates with its blend <br />
-                        of rustic charm and modern.
-                      </p>
-                    </div>
-                  </div>
+          <button
+            class="btn btn-primary  lg:font-bold bg-white lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i
+              class="fa-solid fa-arrow-right"></i> About Us</button>
 
-                  <div class="card card-side lg:items-center bg-white p-5 lg:h-32 lg:w-10/12 flex flex-row justify-start items-start text-start space-x-4 mb-6">
-                    <figure class="">
-                      <img class="w-full h-full object-contain" src="./assets/residential.png" alt="Residential Icon" />
-                    </figure>
-                    <div class="flex flex-col justify-center">
-                      <h2 class="card-title font-extrabold text-xl text-subtitle">Residential</h2>
-                      <p class="lg:font-medium text-lg text-card_sub">The barn house captivates with its blend <br />
-                        of rustic charm and modern.
-                      </p>
-                    </div>
-                  </div>
-<!--                   
+          <h3 class=" text-3xl font-bold lg:text-4xl text-title mb-2">We design thoughtful,<br> liveable spaces</h3>
+
+
+          <p class="py-6 text-sm lg:text-xl font-medium text-subtitle w-full lg:w-10/12">Our team of passionate designers creates environments that blend functionality with aesthetics. From cozy homes to vibrant workspaces, we prioritize comfort, sustainability, and innovation. </p>
+
+
+
+          <div
+            class="card card-side lg:items-center bg-white p-5 lg:h-32 lg:w-10/12 flex flex-row justify-start items-start text-start space-x-4 mb-6">
+            <figure class="">
+              <img class="w-full h-full object-contain" src="./assets/commercial.png" alt="Commercial Icon" />
+            </figure>
+            <div class="flex flex-col justify-center">
+              <h2 class="card-title font-extrabold text-xl text-subtitle">Commercial</h2>
+              <p class="lg:font-medium text-lg text-card_sub">The barn house captivates with its blend of rustic charm and modern.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card card-side lg:items-center bg-white p-5 lg:h-32 lg:w-10/12 flex flex-row justify-start items-start text-start space-x-4 mb-6">
+            <figure class="">
+              <img class="w-full h-full object-contain" src="./assets/residential.png" alt="Residential Icon" />
+            </figure>
+            <div class="flex flex-col justify-center">
+              <h2 class="card-title font-extrabold text-xl text-subtitle">Residential</h2>
+              <p class="lg:font-medium text-lg text-card_sub">The barn house captivates with its blend of rustic charm and modern.
+              </p>
+            </div>
+          </div>
+          <!--                   
                   <div class="card card-side bg-white  p-5 h-32 items-center w-10/12 ">
                     <figure class="">
                       <img
@@ -182,133 +182,139 @@
                       
                     </div>
                   </div> -->
-            </div>
-
-            <div>
-                 <img src="./assets/Rectangle.png" alt="">
-            </div>
         </div>
+
+        <div>
+          <img src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
     </section>
-       
+
     <!-- 3rd section  -->
-<section class="w-full bg-second_bg mx-auto pb-24 ">
-    <div class="hero   ">
-      <div class="hero-content text-center ">
-        <div class="max-w-md ">
-          <button class="btn btn-primary  lg:font-bold bg-white lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i class="fa-solid fa-arrow-right"></i> How we work</button>
-          <h1 class="text-4xl lg:font-extrabold font-bold">Our Works Process</h1>
-          <p class="py-6 text-subtitle lg:text-lg">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
-          </p>
-         
+    <section class="w-full bg-second_bg mx-auto pb-24 ">
+      <div class="hero   ">
+        <div class="hero-content text-center ">
+          <div class="max-w-md ">
+            <button
+              class="btn btn-primary  lg:font-bold bg-white lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i
+                class="fa-solid fa-arrow-right"></i> How we work</button>
+            <h1 class="text-4xl lg:font-extrabold font-bold">Our Works Process</h1>
+            <p class="py-6 text-subtitle lg:text-lg">
+              Our process seamlessly integrates creativity, functionality, and sustainability. 
+            </p>
+
+          </div>
         </div>
+
       </div>
-      
-    </div>
 
-   
 
-    <div class="lg:flex lg:flex-row container mx-auto lg:gap-6 flex flex-col gap-4"> 
-      <div class="card bg-base-100 w-96 container mx-auto  ">
 
-        <div class="card-body bg-card1 rounded-2xl">
-          <div class="w-10 h-7 mb-3"> 
-          <img class="object-contain w-full h-ful" src="./assets/concept.png" alt="">
+      <div class="lg:flex lg:flex-row container mx-auto lg:gap-6 flex flex-col gap-4">
+        <div class="card bg-base-100 w-96 container mx-auto  ">
+
+          <div class="card-body bg-card1 rounded-2xl">
+            <div class="w-10 h-7 mb-3">
+              <img class="object-contain w-full h-ful" src="./assets/concept.png" alt="">
+            </div>
+            <h2 class="card-title lg:font-extrabold font-extrabold">Concept</h2>
+            <p class="lg:font-medium font-medium text-subtitle">Innovative ideas, bold visions. We turn imagination into architectural reality.</p>
+            <div class="card-actions justify-end">
+
+            </div>
+          </div>
         </div>
-          <h2 class="card-title lg:font-extrabold font-extrabold">Concept</h2>
-          <p class="lg:font-medium font-medium text-subtitle">The barn house captivates with its blend of rustic charm and modern.</p>
-          <div class="card-actions justify-end">
-       
+
+        <div class="card bg-base-100 w-96 container mx-auto ">
+          <div class="card-body bg-card2 rounded-2xl">
+            <div class="w-10 h-7 mb-3">
+              <img class="object-contain w-full h-ful" src="./assets/flow-chart.png" alt="">
+            </div>
+            <h2 class="card-title lg:font-extrabold font-extrabold">Design Process</h2>
+            <p class="lg:font-medium font-medium text-subtitle">Our design process is a journey of creativity, innovation, and teamwork.</p>
+            <div class="card-actions justify-end">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 w-96 container mx-auto ">
+          <div class="card-body bg-card3 rounded-2xl">
+            <div class="w-10 h-7 mb-3">
+              <img class="object-contain w-full h-ful" src="./assets/vision.png" alt="">
+            </div>
+            <h2 class="card-title lg:font-extrabold font-extrabold">Supervision</h2>
+            <p class="lg:font-medium font-medium text-subtitle">Our team ensures seamless execution and quality control in every project.</p>
+            <div class="card-actions justify-end">
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card bg-base-100 w-96 container mx-auto ">
+          <div class="card-body bg-card4 rounded-2xl">
+            <div class="w-10 h-7 mb-3">
+              <img class="object-contain w-full h-ful" src="./assets/budget-planning.png" alt="">
+            </div>
+            <h2 class="card-title lg:font-extrabold font-extrabold">Budget Planning</h2>
+            <p class="lg:font-medium font-medium text-subtitle">Our team plans and manages budgets to ensure cost-effective delivery.</p>
+            <div class="card-actions justify-end">
+
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card bg-base-100 w-96 container mx-auto ">
-        <div class="card-body bg-card2 rounded-2xl">
-          <div class="w-10 h-7 mb-3"> 
-          <img class="object-contain w-full h-ful" src="./assets/flow-chart.png" alt="">
-        </div>
-          <h2 class="card-title lg:font-extrabold font-extrabold">Design Process</h2>
-          <p class="lg:font-medium font-medium text-subtitle">The barn house captivates with its blend of rustic charm and modern.</p>
-          <div class="card-actions justify-end">
-       
+    </section>
+
+    <!-- 4th section challenge  -->
+    <section class="w-full lg:bg-white bg-second_bg mx-auto ">
+
+      <div class="hero   ">
+        <div class="hero-content text-center ">
+          <div class="max-w-md lg:mt-24 ">
+            <button
+              class="btn btn-primary  lg:font-bold bg-fourthbtn lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i
+                class="fa-solid fa-arrow-right"></i> Explore our Latest works</button>
+            <h1 class="text-4xl lg:font-extrabold font-bold lg:text-4xl">Our Latest Portfolio</h1>
+            <p class="py-6 text-subtitle lg:text-lg">
+              Discover our cutting-edge designs, from sleek skyscrapers to sustainable homes. Explore projects blending form and function seamlessly.
+            </p>
+
           </div>
         </div>
+
       </div>
 
-      <div class="card bg-base-100 w-96 container mx-auto ">
-        <div class="card-body bg-card3 rounded-2xl">
-          <div class="w-10 h-7 mb-3"> 
-          <img class="object-contain w-full h-ful" src="./assets/vision.png" alt="">
-        </div>
-          <h2 class="card-title lg:font-extrabold font-extrabold">Supervision</h2>
-          <p class="lg:font-medium font-medium text-subtitle">The barn house captivates with its blend of rustic charm and modern.</p>
-          <div class="card-actions justify-end">
-       
+
+
+      <div class="container mx-auto">
+
+        <!-- 1st card -->
+        <div class=" flex flex-wrap lg:flex-nowrap p-6">
+          <div
+            class="card lg:card-side bg-white  lg:w-8/12  m-3  border  lg:border-cardborder  border-gray-300  p-6 flex-grow pt-11">
+            <figure class="lg:w-1/2  mx-auto">
+              <img class="w-full" src="./assets/img1.png" alt="Album" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-title lg:font-extrabold font-extrabold lg:text-2xl">Commercial</h2>
+              <p class="text-card_sub lg:font-medium lg:text-lg">Made with galvanized square steels,your work space will
+                inspire you to do your best </p>
+              <div class="card-actions justify-start">
+                <!-- <button class="btn btn-primary border-none bg-white">View Details  <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i></button> -->
+                <div class="mt-4">
+                  <a class=" lg:font-extrabold lg:text-xl font-extrabold text-xl" href="">View Details <i
+                      class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-2xl p-2"
+                      style="color: #1c1c1c;"></i></a>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
-      </div>
 
-
-      <div class="card bg-base-100 w-96 container mx-auto ">
-        <div class="card-body bg-card4 rounded-2xl">
-          <div class="w-10 h-7 mb-3"> 
-          <img class="object-contain w-full h-ful" src="./assets/budget-planning.png" alt="">
-        </div>
-          <h2 class="card-title lg:font-extrabold font-extrabold">Budget Planning</h2>
-          <p class="lg:font-medium font-medium text-subtitle">The barn house captivates with its blend of rustic charm and modern.</p>
-          <div class="card-actions justify-end">
-       
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- 4th section challenge  -->
-   <section class="w-full lg:bg-white bg-second_bg mx-auto ">
-
-    <div class="hero   ">
-      <div class="hero-content text-center ">
-        <div class="max-w-md lg:mt-24 ">
-          <button class="btn btn-primary  lg:font-bold bg-fourthbtn lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</button>
-          <h1 class="text-4xl lg:font-extrabold font-bold lg:text-4xl">Our Latest Portfolio</h1>
-          <p class="py-6 text-subtitle lg:text-lg">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
-          </p>
-         
-        </div>
-      </div>
-      
-    </div>
-
-
-
-    <div class="container mx-auto">
-
-    <!-- 1st card -->
-<div class=" flex flex-wrap lg:flex-nowrap p-6">
-    <div class="card lg:card-side bg-white  lg:w-8/12  m-3  border  lg:border-cardborder  border-gray-300  p-6 flex-grow pt-11">
-      <figure class="lg:w-1/2  mx-auto" >
-        <img class="w-full"
-          src="./assets/img1.png"
-          alt="Album" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-title lg:font-extrabold font-extrabold lg:text-2xl">Commercial</h2>
-        <p class="text-card_sub lg:font-medium lg:text-lg">Made with galvanized square steels,your work space will inspire you to do your best </p>
-        <div class="card-actions justify-start">
-          <!-- <button class="btn btn-primary border-none bg-white">View Details  <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i></button> -->
-           <div class="mt-4">
-          <a class=" lg:font-extrabold lg:text-xl font-extrabold text-xl" href="">View Details   <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-2xl p-2" style="color: #1c1c1c;"></i></a>
-        </div>
-        </div>
-      </div>
-      
-    </div>
-
-    <!-- <div class="card lg:card-normal
+          <!-- <div class="card lg:card-normal
       lg:w-4/12 lg:border  lg:border-cardborder mx-auto ">
       <figure class="mx-auto border-2 lg:flex lg:justify-center lg:items-center ">
         <img class=" w-fit  "
@@ -317,31 +323,31 @@
       </figure>
       
     </div> -->
-    <!-- 2nd card -->
-    <!-- <div class=" card border border-cardborder lg:border lg:border-cardborder p-6 lg:w-4/12">
+          <!-- 2nd card -->
+          <!-- <div class=" card border border-cardborder lg:border lg:border-cardborder p-6 lg:w-4/12">
       <img class="container mx-auto " src="./assets/img2.png" alt="">
     </div> -->
 
-   <!-- 2nd card -->
-    <div class="card bg-white lg:w-4/12 border border-gray-300 lg:border-cardborder  flex-grow m-3 ">
-      
-      <div class="card-body items-center text-center ">
-        <img class="container mx-auto " src="./assets/img2.png" alt="">
-      </div>
-    </div>
-  </div>
-    
-  <!-- 2nd row  -->
+          <!-- 2nd card -->
+          <div class="card bg-white lg:w-4/12 border border-gray-300 lg:border-cardborder  flex-grow m-3 ">
 
-  <!-- <div class="grid grid-cols-1 lg:grid-cols-2"> -->
-    <!-- <div class="grid lg:grid-cols-12 lg:grid-rows-1 lg:p-7 m-3  ">
+            <div class="card-body items-center text-center ">
+              <img class="container mx-auto " src="./assets/img2.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd row  -->
+
+        <!-- <div class="grid grid-cols-1 lg:grid-cols-2"> -->
+        <!-- <div class="grid lg:grid-cols-12 lg:grid-rows-1 lg:p-7 m-3  ">
      
      <div class="card-body items-center text-center lg:col-span-3  border border-cardborder rounded-2xl lg:m-2 ">
       <img class="container mx-auto" src="./assets/img3.png" alt="">
      
     </div>
     </div> -->
-    <!-- <div class="grid lg:grid-cols-12 lg:grid-rows-1 lg:p-7 m-3 bg-white rounded-2xl flex-grow">
+        <!-- <div class="grid lg:grid-cols-12 lg:grid-rows-1 lg:p-7 m-3 bg-white rounded-2xl flex-grow">
      
       <div class="card-body items-center text-center lg:col-span-3 border border-gray-300 lg:border lg:border-cardborder rounded-2xl lg:m-2 ">
        <img class="container mx-auto" src="./assets/img3.png" alt="">
@@ -349,262 +355,287 @@
      </div>
      </div> -->
 
-     <!-- 5th card mobile -->
-     <div class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder   lg:ml-8 m-8 block lg:hidden mt-1">
-      
-      <div class="card-body items-center text-center  ">
-        <img class="container mx-auto " src="./assets/img5.png" alt="">
-      </div>
-    </div>
- 
+        <!-- 5th card mobile -->
+        <div
+          class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder   lg:ml-8 m-8 block lg:hidden mt-1">
 
-     <div class="flex flex-col lg:flex-row  lg:justify-start lg:items-center  "> 
-      <!-- 3rd card -->
-     <div class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder   lg:ml-8 m-8 lg:block hidden">
-      
-      <div class="card-body items-center text-center ">
-        <img class="container mx-auto " src="./assets/img3.png" alt="">
-      </div>
-    </div>
-
-    <!-- 4th card -->
-    <div class="card lg:card-side bg-white  lg:w-6/12  border  lg:border-cardborder  border-gray-300  lg:p-6 p-6 m-7 lg:m-4 pt-11 mt-1">
-      <figure class="lg:w-full  mx-auto" >
-        <img class="w-full"
-          src="./assets/img4.png"
-          alt="Album" />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title text-title lg:font-extrabold font-extrabold lg:text-2xl">Commercial</h2>
-        <p class="text-card_sub lg:font-medium lg:text-lg">Made with galvanized square steels,your work space will inspire you to do your best  </p>
-        <div class="card-actions justify-start">
-          <!-- <button class="btn btn-primary border-none bg-white">View Details  <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i></button> -->
-           <div class="">
-          <a class=" lg:font-extrabold lg:text-xl font-extrabold text-xl" href="">View Details   <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-2xl p-2" style="color: #1c1c1c;"></i></a>
+          <div class="card-body items-center text-center  ">
+            <img class="container mx-auto " src="./assets/img5.png" alt="">
+          </div>
         </div>
-        </div>
-      </div>
-      
-    </div>
 
-    <!-- 3rd card mobile -->
-    <div class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder   lg:ml-8 m-8 block lg:hidden mt-1">
-      
-      <div class="card-body items-center text-center ">
-        <img class="container mx-auto " src="./assets/img3.png" alt="">
-      </div>
-    </div>
-    
+        <!-- 2nd row -->
 
-    <!-- 5th card -->
-    <div class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder   lg:ml-8 lg:m-8 mt-1 m-8">
-      
-      <div class="card-body items-center text-center  ">
-        <img class="container mx-auto " src="./assets/img5.png" alt="">
-      </div>
-    </div>
+        <div class="flex flex-col lg:flex-row  lg:justify-start lg:items-center  ">
+          <!-- 3rd card -->
+          <div
+            class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder lg:ml-8 m-8 lg:block hidden">
 
-  </div>
+            <div class="card-body items-center text-center ">
+              <img class="container mx-auto " src="./assets/img3.png" alt="">
+            </div>
+          </div>
 
-
-  <!-- </div> -->
-
-</div>
- 
-
-    
-    
-   </section>
- 
-   <!-- 5th section challenge -->
-
-   <section class="w-full bg-second_bg mx-auto pb-24 ">
-    
-    
-    <div class="hero   ">
-      <div class="hero-content text-center ">
-        <div class="max-w-md lg:mt-24 ">
-          <button class="btn btn-primary  lg:font-bold bg-white lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i class="fa-solid fa-arrow-right"></i> Meet Our Team</button>
-          <h1 class="text-4xl lg:font-extrabold font-bold lg:text-4xl">We Have Professionals</h1>
-          <p class="py-6 text-subtitle lg:text-lg">
-            Our expert architects and designers bring creativity and precision to every project, ensuring exceptional results from concept to completion.
-          </p>
-         
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="container mx-auto bg-stone-300 border border-gray-400 rounded-2xl">
-      <div class="carousel w-full">
-        <!-- Slide 1 -->
-        <div id="slide1" class="carousel-item relative w-full h-auto flex items-center justify-center">
-          <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full">
-            <img
-              src="./assets/T-9.jpg"
-              class="w-full md:w-1/2 lg:w-1/4 h-auto mx-auto lg:p-8 p-4" />
-    
-            <div class="hero w-full lg:w-3/4 lg:text-left">
-              <div class="hero-content text-center lg:text-left p-4 m-4 lg:pt-20">
-                <div class="max-w-md mx-auto lg:mx-0">
-                  <h1 class="text-4xl md:text-5xl font-bold">Bernard Arnault</h1>
-                  <p class="py-4">Bernard Arnault is the CEO of Rinterio, a leading force in innovative and sustainable architectural design. A graduate of the Manchester School of Architecture, Bernard combines creative vision with practical expertise, steering Rinterio to success across commercial, residential, and public projects. Under his leadership, the firm has earned a reputation for cutting-edge designs that prioritize both aesthetics and environmental responsibility. Passionate about mentoring the next generation, Bernard remains an influential figure in the architectural community.</p>
-                  <div class="flex items-center justify-center lg:justify-start gap-4">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                  </div>
+          <!-- 4th card -->
+          <div
+            class="card lg:card-side bg-white  lg:w-6/12  border  lg:border-cardborder  border-gray-300  lg:p-6 p-6 m-7 lg:m-4 pt-11 mt-1">
+            <figure class="lg:w-full  mx-auto">
+              <img class="w-full" src="./assets/img4.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-title lg:font-extrabold font-extrabold lg:text-2xl">Commercial</h2>
+              <p class="text-card_sub lg:font-medium lg:text-lg">Made with galvanized square steels,your work space will
+                inspire you to do your best </p>
+              <div class="card-actions justify-start">
+                <!-- <button class="btn btn-primary border-none bg-white">View Details  <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i></button> -->
+                <div class="lg:mt-4">
+                  <a class=" lg:font-extrabold lg:text-xl font-extrabold text-xl" href="">View Details <i
+                      class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-2xl p-2"
+                      style="color: #1c1c1c;"></i></a>
                 </div>
               </div>
             </div>
-          </div>
-    
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <!-- <a href="#slide2" class="btn btn-circle">❯</a> -->
 
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-        </div>
-    
-        <!-- Slide 2 -->
-        <div id="slide2" class="carousel-item relative w-full h-auto flex items-center justify-center">
-          <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full">
-            <img
-              src="./assets/T-1.jpg"
-              class="w-full md:w-1/2 lg:w-1/4 h-auto mx-auto lg:p-8 p-4" />
-    
-            <div class="hero w-full lg:w-3/4 lg:text-left">
-              <div class="hero-content text-center lg:text-left p-4 m-4 lg:pt-20">
-                <div class="max-w-md mx-auto lg:mx-0">
-                  <h1 class="text-4xl md:text-5xl font-bold">Ryan Smith</h1>
-                  <p class="py-4">Ryan Smith, Managing Director of Rinterio, is a graduate of the University of California, Berkeley (UCB). With a strong foundation in architecture and design, Ryan leads Rinterio’s strategic and operational efforts, driving innovation and sustainability in every project. His leadership has cemented Rinterio's reputation for excellence, while his commitment to mentoring young architects underscores his dedication to the future of the industry.</p>
-                  <div class="flex items-center justify-center lg:justify-start gap-4">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                  </div>
-                </div>
-              </div>
+
+          <!-- 3rd card mobile -->
+          <div
+            class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder   lg:ml-8 m-8 block lg:hidden mt-1">
+
+            <div class="card-body items-center text-center ">
+              <img class="container mx-auto " src="./assets/img3.png" alt="">
             </div>
           </div>
-    
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-    
-        <!-- Slide 3 -->
-        <div id="slide3" class="carousel-item relative w-full h-auto flex items-center justify-center">
-          <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full">
-            <img
-              src="./assets/T-2.jpg"
-              class="w-full md:w-1/2 lg:w-1/4 h-auto mx-auto lg:p-8 p-4" />
-    
-            <div class="hero w-full lg:w-3/4 lg:text-left">
-              <div class="hero-content text-center lg:text-left p-4 m-4 lg:pt-20">
-                <div class="max-w-md mx-auto lg:mx-0">
-                  <h1 class="text-4xl md:text-5xl font-bold">Jay Slater</h1>
-                  <p class="py-4">Jay Slater, the Chief Architect at Rinterio, is a distinguished graduate of the Manchester School of Architecture. Known for his innovative design approach, Jay leads the creative direction of Rinterio’s architectural projects, blending aesthetics with functionality to create impactful spaces. His expertise and vision have been instrumental in establishing Rinterio as a leader in sustainable and cutting-edge architecture.</p>
-                  <div class="flex items-center justify-center lg:justify-start gap-4">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                  </div>
-                </div>
-              </div>
+
+
+          <!-- 5th card -->
+          <div class="card bg-white lg:w-3/12 border border-gray-300 lg:border-cardborder   lg:ml-8 lg:m-8 mt-1 m-8">
+
+            <div class="card-body items-center text-center  ">
+              <img class="container mx-auto " src="./assets/img5.png" alt="">
             </div>
           </div>
-    
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
+
         </div>
+
+
+        <!-- </div> -->
+
       </div>
-    </div>
-  
 
-   </section>
 
-   <!-- 6th section  -->
-    <section class="w-full bg-bg1 bg-no-repeat bg-cover mx-auto pb-24  ">
- 
+
+
+    </section>
+
+    <!-- 5th section challenge -->
+
+    <section class="w-full bg-second_bg mx-auto pb-24 ">
+
+
       <div class="hero   ">
         <div class="hero-content text-center ">
           <div class="max-w-md lg:mt-24 ">
-            <button class="btn btn-primary  lg:font-bold bg-fourthbtn lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
+            <button
+              class="btn btn-primary  lg:font-bold bg-white lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i
+                class="fa-solid fa-arrow-right"></i> Meet Our Team</button>
+            <h1 class="text-4xl lg:font-extrabold font-bold lg:text-4xl">We Have Professionals</h1>
+            <p class="py-6 text-subtitle lg:text-lg">
+              Our expert architects and designers bring creativity and precision to every project, ensuring exceptional
+              results from concept to completion.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container mx-auto bg-stone-300 border border-gray-400 rounded-2xl">
+        <div class="carousel w-full">
+          <!-- Slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full h-auto flex items-center justify-center">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full">
+              <img src="./assets/T-9.jpg" class="w-full md:w-1/2 lg:w-1/4 h-auto mx-auto lg:p-8 p-4" />
+
+              <div class="hero w-full lg:w-3/4 lg:text-left">
+                <div class="hero-content text-center lg:text-left p-4 m-4 lg:pt-20">
+                  <div class="max-w-md mx-auto lg:mx-0">
+                    <h1 class="text-4xl md:text-5xl font-bold">Bernard Arnault</h1>
+                    <p class="py-4">Bernard Arnault is the CEO of Rinterio, a leading force in innovative and
+                      sustainable architectural design. A graduate of the Manchester School of Architecture, Bernard
+                      combines creative vision with practical expertise, steering Rinterio to success across commercial,
+                      residential, and public projects. Under his leadership, the firm has earned a reputation for
+                      cutting-edge designs that prioritize both aesthetics and environmental responsibility. Passionate
+                      about mentoring the next generation, Bernard remains an influential figure in the architectural
+                      community.</p>
+                    <div class="flex items-center justify-center lg:justify-start gap-4">
+                      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <!-- <a href="#slide2" class="btn btn-circle">❯</a> -->
+
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full h-auto flex items-center justify-center">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full">
+              <img src="./assets/T-1.jpg" class="w-full md:w-1/2 lg:w-1/4 h-auto mx-auto lg:p-8 p-4" />
+
+              <div class="hero w-full lg:w-3/4 lg:text-left">
+                <div class="hero-content text-center lg:text-left p-4 m-4 lg:pt-20">
+                  <div class="max-w-md mx-auto lg:mx-0">
+                    <h1 class="text-4xl md:text-5xl font-bold">Ryan Smith</h1>
+                    <p class="py-4">Ryan Smith, Managing Director of Rinterio, is a graduate of the University of
+                      California, Berkeley (UCB). With a strong foundation in architecture and design, Ryan leads
+                      Rinterio’s strategic and operational efforts, driving innovation and sustainability in every
+                      project. His leadership has cemented Rinterio's reputation for excellence, while his commitment to
+                      mentoring young architects underscores his dedication to the future of the industry.</p>
+                    <div class="flex items-center justify-center lg:justify-start gap-4">
+                      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full h-auto flex items-center justify-center">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full">
+              <img src="./assets/T-2.jpg" class="w-full md:w-1/2 lg:w-1/4 h-auto mx-auto lg:p-8 p-4" />
+
+              <div class="hero w-full lg:w-3/4 lg:text-left">
+                <div class="hero-content text-center lg:text-left p-4 m-4 lg:pt-20">
+                  <div class="max-w-md mx-auto lg:mx-0">
+                    <h1 class="text-4xl md:text-5xl font-bold">Jay Slater</h1>
+                    <p class="py-4">Jay Slater, the Chief Architect at Rinterio, is a distinguished graduate of the
+                      Manchester School of Architecture. Known for his innovative design approach, Jay leads the
+                      creative direction of Rinterio’s architectural projects, blending aesthetics with functionality to
+                      create impactful spaces. His expertise and vision have been instrumental in establishing Rinterio
+                      as a leader in sustainable and cutting-edge architecture.</p>
+                    <div class="flex items-center justify-center lg:justify-start gap-4">
+                      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- 6th section  -->
+    <section class="w-full bg-bg1 bg-no-repeat bg-cover mx-auto pb-24  ">
+
+      <div class="hero   ">
+        <div class="hero-content text-center ">
+          <div class="max-w-md lg:mt-24 ">
+            <button
+              class="btn btn-primary  lg:font-bold bg-fourthbtn lg:border-none border-none font-bold text-title mb-5 lg:text-lg"><i
+                class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
             <h1 class="text-4xl lg:font-extrabold font-bold lg:text-4xl">Let’s Discuss Next Project</h1>
             <p class="py-6 text-subtitle lg:text-lg">
-              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              Let’s explore possibilities, exchange ideas, and create something extraordinary together. Reach out to us today! 
             </p>
-           
+
           </div>
         </div>
       </div>
 
       <div class="container mx-auto p-4 lg:p-0">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
-         
-          <!-- <div class="grid lg:grid-cols-2 lg:grid-rows-3 "> -->
-            
-           <div class="lg:w-full col-span-2 lg:col-span-1">
-              <input type="text" placeholder="First Name*" class="input input-bordered w-full " />
-            </div>
-  
-            <div class="lg:w-full lg:w-full col-span-2 lg:col-span-1">
-              <input type="text" placeholder="Last Name*" class="input input-bordered w-full " />
-            </div>
-      
-            <div class="w-full lg:w-full col-span-2 lg:col-span-1">
-              <input type="text" placeholder="Phone Number*" class="input input-bordered w-full " />
-            </div>
-      
-            <div class="w-full lg:w-full col-span-2 lg:col-span-1">
-              <input type="text" placeholder="Email Number*" class="input input-bordered w-full " />
-            </div>
 
-            <div class="col-span-2 w-full ">
-              <textarea class="textarea textarea-bordered w-full h-full " rows=8 placeholder="Write your message here"></textarea>
-            </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+
+          <!-- <div class="grid lg:grid-cols-2 lg:grid-rows-3 "> -->
+
+          <div class="lg:w-full col-span-2 lg:col-span-1">
+            <input type="text" placeholder="First Name*" class="input input-bordered w-full " />
+          </div>
+
+          <div class="lg:w-full lg:w-full col-span-2 lg:col-span-1">
+            <input type="text" placeholder="Last Name*" class="input input-bordered w-full " />
+          </div>
+
+          <div class="w-full lg:w-full col-span-2 lg:col-span-1">
+            <input type="tel" placeholder="Phone Number*" class="input input-bordered w-full " />
+          </div>
+
+          <div class="w-full lg:w-full col-span-2 lg:col-span-1">
+            <input type="email" placeholder="Email Address*" class="input input-bordered w-full " />
+          </div>
+
+          <div class="col-span-2 w-full ">
+            <textarea class="textarea textarea-bordered w-full h-full " rows=8
+              placeholder="Write your message here"></textarea>
+          </div>
           <!-- </div> -->
         </div>
-        
-        <button class="btn bg-formbtn w-full w-full text-xl font-extrabold  lg:flex gap-2 items-center mx-auto mt-6 ">View Details   <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-1" style="color:white;"></i></button>
-        </div>
-      
+
+        <button
+          class="btn bg-formbtn w-full w-full text-xl font-extrabold  lg:flex gap-2 items-center mx-auto mt-6 ">View
+          Details <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-1"
+            style="color:white;"></i></button>
+      </div>
+
 
     </section>
 
-    </main>
+  </main>
 
-    
- 
-      <footer class="footer footer-center bg-black text-base-content rounded p-10">
-        
-        <div class=" lg:flex gap-2 flex">
-                   
-          <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i>
-          <a class=" text-4xl font-bold text-white">Rinterio</a>
-      </div>
-      <p class="py-6 text-card_sub lg:text-lg ">
-        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
-      </p>
-        <nav class="grid grid-flow-row lg:grid-flow-col lg:gap-32 gap-5 text-white">
-          <a class="link link-hover">Home</a>
-          <a class="link link-hover">Services</a>
-          <a class="link link-hover">Portfolio</a>
-          <a class="link link-hover">Blogs</a>
-          <a class="link link-hover">Contact Us</a>
-        </nav>
-        <div class="flex">
-        <a class="btn bg-arrow text-xl font-extrabold  lg:flex gap-2 items-center border-none  ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2" style="color: #ffffff;"></i></a>
-      </div>
-       
-      </footer>
-   
+
+
+  <footer class="footer footer-center bg-black text-base-content rounded p-10">
+
+    <div class=" lg:flex gap-2 flex">
+
+      <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow rounded-3xl p-3" style="color: #1c1c1c;"></i>
+      <a class=" text-4xl font-bold text-white">Rinterio</a>
+    </div>
+    <p class="py-6 text-card_sub lg:text-lg ">
+      The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+      sleek metal accents.
+    </p>
+    <nav class="grid grid-flow-row lg:grid-flow-col lg:gap-32 gap-5 text-white">
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Services</a>
+      <a class="link link-hover">Portfolio</a>
+      <a class="link link-hover">Blogs</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <div class="flex">
+      <a class="btn bg-arrow text-xl font-extrabold  lg:flex gap-2 items-center border-none  ">Book Consult<i
+          class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-3xl p-2" style="color: #ffffff;"></i></a>
+    </div>
+
+  </footer>
+
 </body>
 
 </html>
